@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./tugas/meeting-4/praktek/app";
+import App from "./tugas/meeting-5/app.jsx";
 import "./tugas/meeting-4/praktek/login/login.css";
 import "./tugas/meeting-4/praktek/register/register.css";
 
