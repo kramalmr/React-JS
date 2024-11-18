@@ -1,0 +1,58 @@
+li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    list-style: none;
+    margin: 50px;
+    font-family: Helvetica, sans-serif;
+}
+
+.innerCard {
+    height: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 1fr;
+    transition: height 0.3s ease;
+}
+
+.innerCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0;
+    transition: height 0.3s ease;
+}
+
+.innerCard img:hover {
+    height: 300px;
+}
+
+.innerCard .cardText {
+    padding: 20px;
+}
+
+.innerCard button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0 0 20px 20px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.innerCard button:hover {
+    background-color: darkorange;
+}
+
+.innerCard p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: black;
+    opacity: 0.8;
+}
+
