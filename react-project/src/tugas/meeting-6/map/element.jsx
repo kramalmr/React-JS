@@ -1,4 +1,4 @@
-export function card(rackets) {
+export default function card(rackets) {
   return (
     <div className="innerCard">
       <img src={rackets.image} alt={rackets.title} />

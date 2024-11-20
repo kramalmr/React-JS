@@ -1,5 +1,5 @@
 import { rackets } from "./data";
-import { card } from "./element";
+import card from "./element";
 import "./card.css";
 
 
