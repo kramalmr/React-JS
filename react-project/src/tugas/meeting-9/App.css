@@ -1,0 +1,88 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(144, 144, 144, 0.2);
+    width: 400px;
+    height: fit-content;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.product .product-text {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product .product-text h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+.product .product-text p {
+    margin: 0;
+}
+
+.product .product-text .counter-container {
+    display: flex;
+    align-items: center;
+}
+
+.product .product-text .counter-button {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.product .product-text .counter-button button {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    cursor: pointer;    
+}
+
+.product .product-text .counter-button button.tambah {
+    background-color: rgb(53, 207, 53);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.product .product-text .counter-button button.kurang {
+    background-color: rgb(217, 33, 33);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.product .product-text .counter {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.product .total-price {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    color: gray;
+    font-weight: 900;
+}
+
+.summary {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(144, 144, 144, 0.2);
+    width: 400px;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 30px 30px 30px 30px;
+}
