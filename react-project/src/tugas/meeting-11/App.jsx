@@ -34,6 +34,7 @@ const useTheme = () => {
         return () => {
             toggleSwitch.removeEventListener("change", handleChange);
         };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [theme]);
 
     return theme;
@@ -67,6 +68,7 @@ const useToggleTask = () => {
         return () => {
             buttonToggle.removeEventListener('click', handleClick);
         };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isTaskCompleted]);
 
     return isTaskCompleted;
