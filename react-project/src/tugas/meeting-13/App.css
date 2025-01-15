@@ -49,6 +49,19 @@
     -webkit-box-orient: vertical
 }
 
+.product-text p:hover {
+    display: block;
+}
+
+.product .product-text h2:hover {
+    display: block;
+}
+
+.product-image:hover {
+    height: 400px;
+    object-fit: contain;
+}
+
 .product .counter-container {
     display: flex;
     align-items: center;
@@ -110,6 +123,7 @@
     height: 200px;
     object-fit: cover;
     /* object-position: center; */
+    transition: all 0.3s ease;
 }
 
 .product-details {

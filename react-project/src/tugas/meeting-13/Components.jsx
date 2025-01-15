@@ -64,9 +64,9 @@ const Product = ({ product, onChange }) => {
       <div className="product-details">
       <div className="product-text">
         <div>
-          <h2 onMouseOver={(e) => e.currentTarget.style.display = 'block'} onMouseOut={(e) => e.currentTarget.style.display = '-webkit-box'}>{product.title}</h2>
+          <h2>{product.title}</h2>
           <p>{formattedPrice}</p>
-          <p onMouseOver={(e) => e.currentTarget.style.display = 'block'} onMouseOut={(e) => e.currentTarget.style.display = '-webkit-box'}>{product.description}</p>
+          <p>{product.description}</p>
         </div>
       </div>
         <div className="counter-container">
