@@ -1,0 +1,108 @@
+.book-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.book-card {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(144, 144, 144, 0.2);
+    width: 250px;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.book-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px 15px 0 0;
+    transition: height 0.3s ease;
+}
+
+.book-card-info {
+    margin: 0px 0px 0px 0px;
+}
+
+.book-card-info p {
+    margin: 0px 0px 5px 0px;
+}
+
+.book-card-desc {
+    margin: 0px 0px 0px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.book-detail {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(144, 144, 144, 0.2);
+    width: 75%;
+    padding: 20px;
+    margin-bottom: 50px;
+    height: fit-content;
+    /* max-height: 500px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.book-detail-info {
+    margin: 0px 0px 0px 20px;
+}
+
+.book-detail img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.book-detail-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.back-button {
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+}
