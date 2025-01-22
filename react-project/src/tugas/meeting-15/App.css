@@ -1,3 +1,38 @@
+#header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+#header h1 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+#header button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#header button:hover {
+    background-color: #0056b3;
+}
+
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -19,17 +54,14 @@
 .product:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    cursor: pointer;
     transform: scale(1.05);
 }
 
 .product img {
     width: 100%;
     border-radius: 15px 15px 0 0;
-    
 }
-
-.product img:hover {
-    cursor: pointer;
 
 .product .product-text {
     padding: 20px 20px 20px 20px;
@@ -46,7 +78,6 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    line-clamp: 2;
     -webkit-box-orient: vertical
 }
 
@@ -57,7 +88,6 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    line-clamp: 3;
     -webkit-box-orient: vertical
 }
 
