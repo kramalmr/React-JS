@@ -11,6 +11,20 @@
     z-index: 5;
 }
 
+#header img {
+    border-radius: 50%;
+}
+
+#header img:hover {
+    cursor: pointer;
+}
+
+#header div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #header h1 {
     margin: 0;
     color: #333;
@@ -32,6 +46,59 @@
     background-color: #0056b3;
 }
 
+.outer-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    padding: 20px;
+}
+
+.inner-profile {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inner-profile h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.inner-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.inner-profile p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 16px;
+}
+
+.inner-profile button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.inner-profile button:hover {
+    background-color: #0056b3;
+}
 
 
 .product-list {
