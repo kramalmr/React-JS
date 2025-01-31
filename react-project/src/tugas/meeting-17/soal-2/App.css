@@ -1,0 +1,92 @@
+.product-list {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 100px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.product-list th, .product-list td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.product-list th {
+  background-color: #f4f4f4;
+}
+
+.product-list tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.form-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.create-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-product-form input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.create-product-form input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+.create-product-form #create {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.create-product-form #cancel {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff2222;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.back-list {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+}

@@ -73,6 +73,9 @@ function LoginPage() {
         </div>
         <button type="submit">Login</button>
       </form>
+      <a onClick={() => navigate("/help")} style={{ cursor: "pointer" }}>
+        <b>need help?</b>
+      </a>
       <p>
         username: {freeEmail}, password: {freePassword}
       </p>

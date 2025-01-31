@@ -1,0 +1,117 @@
+.help-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.help-content button {
+  width: 100%;
+  margin-right: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+}
+
+.help-content button:hover {
+  background-color: #45a049;
+}
+
+.create-user-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.create-user-form h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.create-user-form form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.create-user-form form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.create-user-form form input:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+.create-user-form form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.create-user-form form button:hover {
+    background-color: #45a049;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-list p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: #f2f2f2; */
+    width: 300px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+}
