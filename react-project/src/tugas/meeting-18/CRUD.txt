@@ -1,0 +1,66 @@
+Soal Praktek 1
+Tambahkan beberapa fitur berikut:
+    1. Create User:
+        ο Tampilkan sebuah formulir dengan input untuk name, email, dan password.
+        ο Setelah tombol "Create User" ditekan, data harus dikirim ke API Escuelajs dengan endpoint https://api.escuelajs.co/api/v1/users/.
+        ο Tampilkan pesan sukses atau error di bawah formulir setelah proses selesai.
+    2. Read Users:
+        ο Tampilkan daftar pengguna yang diambil dari API https://api.escuelajs.co/api/v1/users/.
+        ο Daftar harus berisi kolom untuk ID, Name, Email, dan Role.
+    3. Show Users:
+        ο Tampilkan nama pengguna di samping tombol logout
+
+Soal Cerita: Membuat Aplikasi Manajemen Produk
+
+Pendahuluan
+Jusuf adalah seorang pengelola toko online yang baru saja membuka usahanya. Ia ingin memiliki
+aplikasi sederhana untuk mencatat produk yang dijual di tokonya. Namun, karena anggaran
+terbatas, Jusuf memutuskan untuk menggunakan aplikasi berbasis web sederhana yang hanya
+menyimpan data secara lokal, tanpa menggunakan database atau server. Jusuf meminta bantuan
+Anda, seorang pengembang, untuk membuat aplikasi tersebut.
+
+Tugas Jusuf
+
+Jusuf memiliki dua kebutuhan utama untuk aplikasinya:
+
+    1. Membuat Produk Baru: Jusuf ingin bisa menambahkan produk baru ke dalam daftar, termasuk
+    informasi seperti nama produk (title), harga (price), dan deskripsi produk (description). Ketika
+    sebuah produk ditambahkan, aplikasi harus menyimpan data tersebut agar Jusuf bisa melihatnya
+    nanti, meskipun Jusuf memuat ulang halaman.
+
+    2. Melihat Daftar Produk: Jusuf ingin melihat semua produk yang telah dia tambahkan ke dalam
+    aplikasi. Produk-produk tersebut harus ditampilkan dalam bentuk tabel dengan kolom Nama
+    Produk, Harga, dan Deskripsi. Jika tidak ada produk yang disimpan, aplikasi harus menampilkan
+    pesan bahwa belum ada produk yang tersedia.
+
+Desain Aplikasi
+
+Aplikasi ini akan terdiri dari dua halaman utama:
+
+    1. Halaman Tambah Produk (Create Product):
+    	* Jusuf akan menemukan formulir untuk memasukkan informasi produk.
+    	* Setelah Jusuf mengisi formulir dan menekan tombol Submit, produk baru akan disimpan
+    	di browser menggunakan localStorage.
+    	* Jusuf akan melihat pesan sukses setelah produk berhasil ditambahkan.
+
+    2. Halaman Daftar Produk (Product List):
+    	* Di halaman ini, Jusuf bisa melihat semua produk yang telah dia tambahkan.
+    	* Daftar produk akan ditampilkan dalam sebuah tabel yang terorganisir.
+    	* Jika belum ada produk yang ditambahkan, Jusuf akan melihat pesan "No products
+    	available."
+    	* Jusuf juga bisa kembali ke halaman utama dengan menekan tombol Back to Home.
+
+Navigasi
+
+Aplikasi ini akan menggunakan navigasi sederhana dengan bantuan React Router:
+
+    * Tombol Back to Home akan mengembalikan Jusuf ke halaman utama dari mana pun.
+    * Jusuf dapat beralih antara halaman Create Product dan Product List dengan mudah.
+
+Tantangan untuk Anda
+
+    Bantu Jusuf dengan membuat aplikasi ini menggunakan React. Implementasikan:
+
+    1. Formulir input untuk halaman Create Product yang menyimpan data ke localStorage.
+    2. Tabel untuk menampilkan daftar produk dari localStorage pada halaman Product List.
+    3. Navigasi antar halaman menggunakan React Router.
